@@ -1,0 +1,84 @@
+extend index
+
+block website_title
+    title #{website_title} | من نحن
+
+block home_block
+    //breadcrumb
+    nav(aria-label="breadcrumb" class="main-breadcrumb" style="background-image:url('images/bgs/bread.jpg')")
+        div(class="container")
+            div(class="breadcrumb-title")
+                h2 من نحن
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="index.html") الرئيسية
+                    li(class="breadcrumb-item active" aria-current="page") من نحن
+    //breadcrumb
+
+    //about us
+    section(class="about")
+        div(class="container") 
+            div(class="main-title") اسم موثوق به
+                span(class="top-title") 
+                h2 نبذة عن شركة ألما
+                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم 
+            div(class="content")
+                div(class="row")
+                    div(class="col-lg-3 col-md-6")
+                        div(class="about-box")
+                            div(class="icon")
+                                img(data-src="images/about/01.png" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 عنوان نصي
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                    div(class="col-lg-3 col-md-6")
+                        div(class="about-box")
+                            div(class="icon")
+                                img(data-src="images/about/02.png" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 عنوان نصي
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                    div(class="col-lg-3 col-md-6")
+                        div(class="about-box")
+                            div(class="icon")
+                                img(data-src="images/about/03.png" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 عنوان نصي
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                    div(class="col-lg-3 col-md-6")
+                        div(class="about-box")
+                            div(class="icon")
+                                img(data-src="images/about/04.png" class="img-fluid" alt="")
+                            div(class="text")
+                                h3 عنوان نصي
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+    //about us
+    
+    //video
+    section(class="video")
+        div(class="container")
+            div(class="content")
+                div(class="video-box")
+                    div(class="video-image")
+                        img(data-src="images/bgs/video.jpg" class="img-fluid" alt="")
+                    a(href="https://youtu.be/W4jtlIOmPUM" data-fancybox="gallery")
+                        i(class="bi bi-caret-right-fill")
+    //video
+
+    //clients
+    section(class="clients")
+        div(class="container")
+            div(class="main-title")
+                span(class="top-title") شركاء موثوق بهم
+                h2 عملائنا
+            div(class="content")
+                div(class="clients-carousel owl-carousel owl-theme")
+                    div(class="item")
+                        img(class="img-fluid" data-src="images/clients/01.png" alt="")
+                    div(class="item")
+                        img(class="img-fluid" data-src="images/clients/02.png" alt="")
+                    div(class="item")
+                        img(class="img-fluid" data-src="images/clients/03.png" alt="")
+    //clients
+

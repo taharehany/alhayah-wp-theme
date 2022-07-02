@@ -1,0 +1,174 @@
+extend index
+
+block website_title
+    title #{website_title} | منتجاتنا
+
+block home_block
+    //breadcrumb
+    nav(aria-label="breadcrumb" class="main-breadcrumb" style="background-image:url('images/bgs/bread.jpg')")
+        div(class="container")
+            div(class="breadcrumb-title")
+                h2 منتجاتنا
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="index.html") الرئيسية
+                    li(class="breadcrumb-item active" aria-current="page") منتجاتنا
+    //breadcrumb
+
+    //products page
+    section(class="products-in-page")
+        div(class="container")
+            div(class="main-title")
+                span(class="top-title") اسم موثوق به في صناعة المياه المعبأة
+                h2 منتجات ألما
+            div(class="content")
+                div(class="row")
+                    div(class="col-lg-3")
+                        div(class="side-widget")
+                            div(class="shopping-cart")
+                                div(class="title")
+                                    h4 سلة المشتريات
+                                div(class="content-cart")
+                                    div(class="show-cart")
+                                        div(class="single")
+                                            a(href="single-product.html") 
+                                                div(class="image")
+                                                    button(class="delete-item btn btn-danger", data-name="") &times;
+                                                    img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                            div(class="text")
+                                                a(href="single-product.html") 
+                                                    h3 عنوان المنتج
+                                                span 1 × 55 ريال
+                                    div(class="total-cart") 
+                                        div(class="there-products") 
+                                            p السعر الإجمالي: 
+                                                span 
+                                                |  ريال
+                                            div(class="btns")
+                                                a(href="cart.html" class="btn btn-primary") الذهاب للكارت
+                                                button(type="button", class="clear-cart btn btn-danger") حذف الجميع
+                                        div(class="no-products") لا يوجد منتجات في السلة
+                            div(class="categories")
+                                div(class="title")
+                                    h4 أنواع الزجاجات
+                                div(class="category")
+                                    a(href="#!") زجاجات كبيرة (150)
+                                    a(href="#!") زجاجات صغيرة (50)
+                                    a(href="#!") زجاجات متوسطة الحجم (50)
+                    div(class="col-lg-9")
+                        div(class="row")
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 1 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 2 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 3 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 4 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/slider/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 5 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                            div(class="col-lg-4 col-md-6")
+                                div(class="product-box")
+                                    a(href="single-product.html") 
+                                        div(class="image")
+                                            img(data-src="images/products/01.png", class="img-fluid" alt="")
+                                    div(class="text")
+                                        span(class="badge text-dark") 3 لتر
+                                        h3 اسم المنتج
+                                        p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                        div(class="price")
+                                            span(class="new") 10 ريال
+                                            span(class="old") 20 ريال
+                                        div(class="btns")
+                                            a(href="" data-name="زجاجة 6 لتر" data-price="10" class="add_to_cart btn") 
+                                                i(class="bi bi-cart")
+                                                span أضف إلى السلة
+                        //pagination
+                        nav(aria-label="Page navigation" class="navigation")
+                            ul(class="pagination")
+                                li(class="page-item")
+                                    a(class="page-link arrow", href="#!", aria-label="Previous")
+                                        span(aria-hidden="true") &laquo;
+                                li(class="page-item active")
+                                    a(class="page-link", href="#!") 1
+                                li(class="page-item")
+                                    a(class="page-link", href="#!") 2
+                                li(class="page-item")
+                                    a(class="page-link", href="#!") 3
+                                li(class="page-item")
+                                    a(class="page-link", href="#!") 4
+                                li(class="page-item")
+                                    a(class="page-link arrow", href="#!", aria-label="Next")
+                                        span(aria-hidden="true") &raquo;
+    //products page

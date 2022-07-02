@@ -1,0 +1,87 @@
+extend index
+
+block website_title
+    title #{website_title} | تواصل معنا
+
+block home_block
+    //breadcrumb
+    nav(aria-label="breadcrumb" class="main-breadcrumb" style="background-image:url('images/bgs/bread.jpg')")
+        div(class="container")
+            div(class="breadcrumb-title")
+                h2 تفاصيل المنتج
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="index.html") الرئيسية
+                    li(class="breadcrumb-item active" aria-current="page") تفاصيل المنتج
+    //breadcrumb
+
+    //contact page
+    section(class="contact-in-page")
+        div(class="container")
+            div(class="content")
+                div(class="row")
+                    div(class="col-lg-7")
+                        div(class="alert alert-danger alert-dismissible fade show", role="alert")
+                            strong يوجد خطأ!
+                            | تفقد جميع حقول الإدخال
+                            button(type="button", class="btn-close", data-bs-dismiss="alert", aria-label="Close")
+                        div(class="main-title")
+                            h2 تواصل معنا
+                        div(class="contact-form")
+                            form(action="" method="POST")
+                                div(class="row")
+                                    div(class="col-lg-6")
+                                        div(class="form-group")
+                                            label(for="") الاسم *
+                                            input(type="text" class="form-control" placeholder="الاسم" required)
+                                    div(class="col-lg-6")
+                                        div(class="form-group")
+                                            label(for="") الإيميل *
+                                            input(type="email" class="form-control" placeholder="الإيميل" required)
+                                    div(class="col-lg-12")
+                                        div(class="form-group")
+                                            label(for="") الهاتف *
+                                            input(type="number" class="form-control" placeholder="الهاتف" required)
+                                    div(class="col-lg-12")
+                                        div(class="form-group")
+                                            label(for="") رسالتك *
+                                            textarea(class="form-control" rows="3" placeholder="اترك رسالتك هنا")
+                                    div(class="col-lg-12")
+                                        p(class="successfully") تم إرسال رسالتك بنجاح
+                                div(class="contact-btn")
+                                    div(class="outer-btn")
+                                        button(class="btn" type="submit")
+                                            span أرسل الآن
+                    div(class="col-lg-5")
+                        div(class="main-title")
+                            h2 معلومات التواصل
+                        div(class="contact-info")
+                            div(class="content")
+                                div(class="details")
+                                    div(class="info-box")
+                                        div(class="icon")
+                                            i(class="bi bi-pin-map")
+                                        div(class="info")
+                                            h4 العنوان
+                                            p building no. 73, street no. 104,maadi, al Qahirah, Egypt
+                                    div(class="info-box")
+                                        div(class="icon")
+                                            i(class="bi bi-envelope") 
+                                        div(class="info")
+                                            h4 الإيميل
+                                            p
+                                                a(href="mailto:support@website.com") support@website.com
+                                    div(class="info-box")
+                                        div(class="icon")
+                                            i(class="bi bi-telephone")
+                                        div(class="info")
+                                            h4 الهاتف
+                                            p 
+                                                a(href="tel:+966553255414" dir="ltr") +966553255414
+    //contact page
+
+    //map
+    section(class="map")
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.33564056191!2d31.22344491853406!3d30.059558098334296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1634654464669!5m2!1sen!2seg", width="100%", height="450", style="border:0;", allowfullscreen="", loading="lazy")
+    //map

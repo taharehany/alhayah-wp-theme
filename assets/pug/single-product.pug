@@ -1,0 +1,123 @@
+extend index
+
+block website_title
+    title #{website_title} | تفاصيل المنتج
+
+block home_block
+    //breadcrumb
+    nav(aria-label="breadcrumb" class="main-breadcrumb" style="background-image:url('images/bgs/bread.jpg')")
+        div(class="container")
+            div(class="breadcrumb-title")
+                h2 تفاصيل المنتج
+            nav(aria-label="breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(href="index.html") الرئيسية
+                    li(class="breadcrumb-item active" aria-current="page") تفاصيل المنتج
+    //breadcrumb
+
+    //alerts
+    div(class="alert alert-danger d-flex justify-content-between", role="alert")
+        div(class="d-flex align-items-center")
+            svg(xmlns="http://www.w3.org/2000/svg", width="24", height="24", fill="#b81c23", class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2", viewBox="0 0 16 16", role="img", aria-label="Warning:")
+                path(d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z")
+            div
+                strong مثال 
+                | على رسالة خطأ
+        a(href="cart.html" class="btn") ذهاب للسلة
+    div(class="alert alert-success d-flex justify-content-between", role="alert")
+        div(class="d-flex align-items-center")
+            svg(class="bi flex-shrink-0 me-2", width="24", height="24", role="img", aria-label="Success:")
+                use(xlink:href="#check-circle-fill")
+                symbol(fill="#8fae1b", id="check-circle-fill" viewBox="0 0 16 16")
+                    path(d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z")
+            div
+                strong مثال 
+                | على رسالة نجاح
+        a(href="cart.html" class="btn") ذهاب للسلة
+    //alerts
+    
+    //single product page
+    section(class="single-product")
+        div(class="container")
+            div(class="content")
+                div(class="single-product-details")
+                    div(class="row")
+                        div(class="col-lg-6 col-md-6")
+                            a(href="images/products/01.png" data-fancybox="gallery") 
+                                div(class="image")
+                                    div(class="icon")
+                                        i(class="bi bi-zoom-in")
+                                    img(data-src="images/products/01.png", class="img-fluid" alt="")
+                        div(class="col-lg-6 col-md-6")
+                            div(class="text")
+                                h3 اسم المنتج هنا
+                                span(class="badge text-dark") 3 لتر
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                div(class="price")
+                                    span(class="new") 10 ريال
+                                    span(class="old") 20 ريال
+                                div(class="btns")
+                                    input(type="number", class="item-count form-control", min="0" max="10000" data-name="زجاجة 1 لتر", value="0")
+                                    a(href="#!" data-name="زجاجة 1 لتر" data-price="10" class="btn") 
+                                        i(class="bi bi-cart")
+                                        span أضف إلى السلة
+    //single product page
+
+    //related products
+    section(class="related-products")
+        div(class="container")
+            div(class="main-title")
+                span(class="top-title") اسم موثوق به في صناعة المياه المعبأة
+                h2 منتجات ذات صلة
+            div(class="content")
+                div(class="row")
+                    div(class="col-lg-4 col-md-6")
+                        div(class="product-box")
+                            a(href="single-product.html") 
+                                div(class="image")
+                                    img(data-src="images/products/01.png", class="img-fluid" alt="")
+                            div(class="text")
+                                span(class="badge text-dark") 3 لتر
+                                h3 اسم المنتج
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                div(class="price")
+                                    span(class="new") 10 ريال
+                                    span(class="old") 20 ريال
+                                div(class="btns")
+                                    a(href="" data-name="زجاجة 1 لتر" data-price="10" class="add_to_cart btn") 
+                                        i(class="bi bi-cart")
+                                        span أضف إلى السلة
+                    div(class="col-lg-4 col-md-6")
+                        div(class="product-box")
+                            a(href="single-product.html") 
+                                div(class="image")
+                                    img(data-src="images/products/01.png", class="img-fluid" alt="")
+                            div(class="text")
+                                span(class="badge text-dark") 3 لتر
+                                h3 اسم المنتج
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                div(class="price")
+                                    span(class="new") 10 ريال
+                                    span(class="old") 20 ريال
+                                div(class="btns")
+                                    a(href="" data-name="زجاجة 2 لتر" data-price="10" class="add_to_cart btn") 
+                                        i(class="bi bi-cart")
+                                        span أضف إلى السلة
+                    div(class="col-lg-4 col-md-6")
+                        div(class="product-box")
+                            a(href="single-product.html") 
+                                div(class="image")
+                                    img(data-src="images/products/01.png", class="img-fluid" alt="")
+                            div(class="text")
+                                span(class="badge text-dark") 3 لتر
+                                h3 اسم المنتج
+                                p عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+                                div(class="price")
+                                    span(class="new") 10 ريال
+                                    span(class="old") 20 ريال
+                                div(class="btns")
+                                    a(href="" data-name="زجاجة 3 لتر" data-price="10" class="add_to_cart btn") 
+                                        i(class="bi bi-cart")
+                                        span أضف إلى السلة
+    //related products

@@ -1,0 +1,341 @@
+@media screen and (max-width: 1500px) {}
+
+@media screen and (max-width: 1199px) {
+    header {
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .hamburger-menu {
+            display: inline-block;
+        }
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    &.active {
+                        .nav-link {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                order: 1;
+            }
+
+            .cart {
+                order: 0;
+            }
+        }
+
+        .offcanvas {
+            .navbar {
+                .navbar-nav {
+                    .nav-item {
+                        padding-inline-start: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    section.about .content .about-image {
+        margin-bottom: 30px;
+    }
+
+    section.about-tabs .content .nav {
+        grid-template-columns: repeat(2, calc((100% / 2) - 5px));
+
+        .nav-link {
+            padding: 10px;
+            height: 80px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+
+    section.about-tabs .content .tab-content .tab-pane {
+        padding: 40px 0;
+    }
+
+    section.contact {
+        .content {
+            .contact-form {
+                padding-inline-start: 0;
+            }
+
+            .image {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.main-slider {
+        .main-slider-carousel {
+            .owl-item {
+                .item {
+                    .title {
+                        h1 {
+                            font-size: 28px;
+                        }
+                    }
+
+                    .item-image {
+                        .ice {
+                            left: 0;
+                            width: 100%;
+                        }
+
+                        .slider-img {
+                            max-width: 400px;
+                            margin: auto;
+                        }
+                    }
+
+                    .item-text {
+                        text-align: center;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.contact-info {
+        .content {
+            .info-box {
+                margin-bottom: 45px;
+
+                p {
+                    height: auto;
+                }
+            }
+
+            .details {
+                position: static;
+                margin: 0;
+            }
+        }
+    }
+
+    section.main-slider {
+        .slider-item {
+            .item-details {
+                text-align: center;
+                .title {
+                    font-size: 26px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                .item-text {
+                    background-color: rgba(0, 0,0,.7);
+                    padding: 25px;
+                }
+            }
+            img {
+                object-position: left;
+                opacity: .5;
+            }
+        }
+    }
+    section.video, section.contact-bg {
+        padding: 100px 0;
+    }
+    section.contact .content {
+        margin-top: -160px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    section.thanks {
+        .content {
+            .text {
+                ul {
+                    display: block;
+
+                    li {
+                        border: none;
+                        padding: 0;
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    // .main-title h2 {
+    //     font-size: 14px;
+    // }
+
+    section.video {
+        .content {
+            .video-box {
+                height: 20rem;
+            }
+        }
+    }
+
+    section.services .content .service-box .details {
+        p {
+            height: auto;
+        }
+    }
+
+    section.contact {
+        .content {
+            padding: 20px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        .navbar {
+            .navbar-brand {
+                img {
+                    max-width: 90px;
+                }
+            }
+
+            .phone-number {
+                .text {
+                    span {
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    .dropdown-menu {
+                        min-width: auto;
+                    }
+                }
+            }
+
+            .cart {
+                .btn {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    #toTop {
+        bottom: 42px;
+
+        button {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    footer {
+        .footer-content {
+            padding-bottom: 70px;
+
+            .footer-box {
+                .about {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+
+                h3+p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .error {
+        h2 {
+            font-size: 8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        .top-part {
+            .top-part-content {
+                .text {
+                    p {
+                        font-size: 10px;
+                    }
+                }
+
+                .icons {
+                    a {
+                        height: 30px;
+                        width: 30px;
+                        line-height: 30px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .navbar {
+            .navbar-brand {
+                padding-inline-end: 10px;
+
+                img {
+                    max-width: 100px;
+                }
+            }
+
+            .navbar-toggler {
+                margin-inline-start: 10px;
+            }
+
+            .phone-number {
+                padding: 0 10px;
+
+                .icon {
+                    display: none;
+                }
+
+                .text {
+                    max-width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .cart {
+                .btn {
+                    i {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
