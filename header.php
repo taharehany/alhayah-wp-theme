@@ -9,7 +9,7 @@
 	<meta name="author" content="TaHa">
 	<link rel="icon" type="image/png" href="imgs/favicon.png" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.png">
 	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,11 @@
 </head>
 <div class="main-wrapper">
 	<!--PreLoader-->
-	<!-- <div class="loader">
+	<div class="loader">
 		<video width="auto" height="auto" muted autoplay loop>
-			<source src="video/loading.webm" type="video/mp4">
-			<source src="videos/video.ogg" type="video/ogg">متصفحك لا يدعم الفيديوهات
+			<source src="<?php echo get_template_directory_uri() ?>/assets/video/loading.webm" type="video/mp4">
 		</video>
-	</div> -->
+	</div>
 	<!--PreLoader-->
 
 	<!--header-->
