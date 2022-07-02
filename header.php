@@ -47,7 +47,7 @@
 					<?php //add_custom_menu(); ?>
 
 					<ul class="navbar-nav">
-						<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">الرئيسية</a></li>
+						<li class="nav-item active"><a class="nav-link" aria-current="page" href="<?php get_bloginfo('url'); ?>">الرئيسية</a></li>
 						<li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
 						<li class="nav-item"><a class="nav-link" href="#works">قطاعات الأعمال</a></li>
 						<li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
@@ -68,7 +68,7 @@
 				<div class="navbar">
 					<div class="collapsed navbar-collapse" id="navbarNavSide">
 						<ul class="navbar-nav">
-							<li class="nav-item active"><a class="nav-link" aria-current="page" href="index.html">الرئيسية</a></li>
+							<li class="nav-item active"><a class="nav-link" aria-current="page" href="<?php get_bloginfo('url'); ?>">الرئيسية</a></li>
 							<li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
 							<li class="nav-item"><a class="nav-link" href="#works">خدماتنا</a></li>
 							<li class="nav-item"><a class="nav-link" href="#services">قطاعات الأعمال</a></li>
