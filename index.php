@@ -382,7 +382,7 @@
 				</div>
 			</div>
 			<div class="text">
-				<div class="info-logo"><a href="index.html"> <img class="img-fluid" data-src="images/logo-white.png" alt=""></a></div>
+				<div class="info-logo"><img class="img-fluid" data-src="<?php echo get_template_directory_uri() ?>/assets/images/logo-white.png" alt="logo"></div>
 				<p>متخصصون في تكنولوجيا معالجة المياه بأحدث الأساليب العلمية نوفر لكم أفضل الحلول لمعالجة المياه و ما عليكم إلا اختيار الأنسب من بينها لدينا أحدث الطرق والأساليب لمعالجة المياه و تنقيتها من البكتريا و الشوائب مع الحياة.. لا داعي للقلق من تغير لون أو رائحة أو طعم المياه فمهمتنا أن نعيد للمياه نقاءها ننفرد بخدمة عملاء مميزة علميًا ومهنيًا مع الحياة ستصل لكل ما هو حديث ومتطور في عالم المياه و تنقيتها.</p>
 			</div>
 			<div class="social-links">
